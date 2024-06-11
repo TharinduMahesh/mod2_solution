@@ -58,3 +58,27 @@ h1{
 #sushi .title {
     background-color: #d3aa48;
 }
+
+@media(min-width : 992px){
+    .sections{
+        flex-direction: row;
+    }
+    .section{
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .section{
+        width: calc(50%-20px);
+    }
+    .section:nth-child(3){
+        width: 100%;
+    }
+}
+
+@media(max-width : 767px){
+    .section{
+        width: 100%;
+    }
+}
